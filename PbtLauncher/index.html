@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pbt Launcher</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        @font-face {
+            font-family: Arcade;
+            src: url('../Assets/UI/Arcade.woff2');
+        }
+
+        ::-webkit-scrollbar {
+            background-color: var(--primary);
+            width: 0.8vw
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: var(--secondary);
+            border-radius: 1rem;
+        }
+
+        :root {
+            --primary: #0e0e0e;
+            --secondary: #020202;
+            --ternary: #0d0d0d;
+            --white: #b6b8bd;
+        }
+
+        * {
+            outline: none;
+            color: var(--white);
+            padding: 0;
+            font-family: Arcade;
+            background-repeat: no-repeat;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        html {
+            image-rendering: pixelated;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-image: url("../Assets/background.png");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-color: black;
+            margin: 0;
+        }
+
+        nav {
+
+            background-color: var(--secondary);
+
+            position: fixed;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            gap: 1.2rem;
+            border-radius: 0 0 0.8rem 0;
+
+            .icon {
+                width: 1.5rem;
+                transition: ease-in-out 0.2s;
+            }
+
+            & .icon:hover { filter: brightness(0.8); }
+
+        }
+
+        .title {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            height: 90vh;
+            padding-bottom: 12vh;
+            background-color: #000c;
+
+            & img { width: 55vw; }
+
+        }
+
+        main {
+
+            background-color: #000c;
+            padding-bottom: 5rem;
+
+            & a {
+
+                display: flex;
+                align-items: center;
+                width: max(20vw, 9rem);
+
+                & .sign { width: 100%; }
+
+                & .text {
+                    width: 50%;
+                    position: relative;
+                    margin-left: -64%;
+                    margin-top: 30%;
+                }
+            }
+
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--secondary);
+            padding: 1.5rem;
+            gap: 1rem;
+
+            & img { width: 25vw; }
+        }
+
+        @media (max-width: 650px) {
+            .title {
+                & img { width: 80vw !important; }
+            }
+
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            footer {
+                & img { width: 40%; }
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="https://pbtservers.com/"><img src="../Assets/Icons/logo.svg" class="icon"></a>
+            <a href="https://discord.gg/mH8aREb"><img src="../Assets/Icons/discord.svg" class="icon"></a>
+            <a href="https://twitter.com/PbtServers"><img src="../Assets/Icons/twitter.svg" class="icon"></a>
+            <a href="https://github.com/PbtServers"><img src="../Assets/Icons/github.svg" class="icon"></a>
+        </nav>
+    </header>
+
+    <div class="title">
+        <img src="../Assets/UI/title.png">
+    </div>
+
+    <main>
+        <a href="https://mega.nz/folder/0fFHTBrb#g_9xTP8ckIHGLetKKmhyew">
+            <img src="../Assets/UI/sign.png" class="sign">
+            <img src="../Assets/UI/downloads.png" class="text">
+        </a>
+    </main>
+
+    <footer>
+        <img src="../Assets/UI/serversTitle.png">
+        <small>
+            &copy; 2023 PbtServers ∙ Design by
+            <a href="https://twitter.com/DekerModMaker">MegaDeker</a> and
+            <a href="https://twitter.com/NicolasBla5quez">Nick</a>
+        </small>
+    </footer>
+</body>
+
+</html>

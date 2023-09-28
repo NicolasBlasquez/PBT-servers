@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBT Servers</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        ::-webkit-scrollbar {
+            background-color: var(--primary);
+            width: 0.8vw
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: var(--secondary);
+            border-radius: 1rem;
+        }
+
+        :root {
+            --primary: #0e0e0e;
+            --secondary: #020202;
+            --ternary: #0d0d0d;
+            --white: #b6b8bd;
+            --color1: #1149b2;
+            --color2: #083c9c;
+        }
+
+        * {
+            outline: none;
+            color: var(--white);
+            padding: 0;
+            font-family: Roboto;
+            background-repeat: no-repeat;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        html {
+            image-rendering: pixelated;
+            scroll-behavior: smooth;
+            background-attachment: fixed;
+            background-image: url("Assets/background2.png");
+            background-size: cover;
+            background-color: black;
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        nav {
+            display: flex;
+            padding: 1.5rem;
+            gap: 1rem;
+        }
+
+        nav>div {
+            border: solid var(--white) 1px;
+            border-radius: 0.5rem;
+            padding: 0.6rem;
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        nav>div a {
+            display: flex;
+            gap: 0.4rem;
+        }
+
+        nav>div .icon {
+            margin-top: 0.1rem;
+            width: 1rem;
+        }
+
+        .announcement {
+            margin: 2vw 2vw 0 2vw;
+            padding: 0.6rem 0.6rem 0.6rem 1rem;
+            display: flex;
+            font-size: 65%;
+            justify-content: space-between;
+            border-radius: 0.5rem;
+            background-image: linear-gradient(120deg, var(--color1) 0%, var(--color2) 100%);
+            align-items: center;
+        }
+
+        .announcement h1 {
+            margin: 0;
+        }
+
+        .announcement .button {
+            background-color: #0000;
+            border: white solid 1px;
+            height: 100%;
+        }
+
+        main {
+            padding: 2rem 3.5vw;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 4rem;
+        }
+
+        main h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        main h4 {
+            margin-top: 0;
+            margin-bottom: 2.5rem;
+        }
+
+        main ul {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+            padding-left: 0.2rem;
+        }
+
+        .icon:hover {
+            filter: brightness(0.8);
+        }
+
+        footer {
+            margin-top: auto;
+            bottom: 0;
+            display: flex;
+            padding: 1.5rem;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        footer img {
+            width: 25vw;
+        }
+
+        .button {
+            padding: 0.8rem;
+            white-space: nowrap;
+            font-size: 120%;
+            background-color: var(--color1);
+            border-radius: 0.5rem;
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+
+        .icon {
+            width: 2rem;
+        }
+
+        @media (max-width: 650px) {
+            footer img {
+                width: 45%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <img src="Assets/Icons/logo.svg" class="icon">
+            <div>
+                <a href="https://estado.pbtservers.com/">Status <img src="Assets/Icons/newtab.svg"
+                        class="icon newtab"></a>
+            </div>
+            <div class="contact">
+                <span>Contact:</span>
+                <a href="https://discord.gg/mH8aREb"><img src="Assets/Icons/discord.svg" class="icon"></a>
+                <a href="https://twitter.com/PbtServers"><img src="Assets/Icons/twitter.svg" class="icon"></a>
+                <a href="https://github.com/PbtServers"><img src="Assets/Icons/github.svg" class="icon"></a>
+            </div>
+        </nav>
+    </header>
+    <div class="announcement">
+        <h1>Try our launcher!</h1>
+        <a href="PbtLauncher/" class="button">Try Now</a>
+    </div>
+    <main>
+
+        <div>
+            <h1>Reliable, High-quality servers</h1>
+            <h4>Perfect for web hosting and multiplayer games</h4>
+            <a href="" class="button">Get Started</a>
+        </div>
+    </main>
+    <footer>
+        <small>
+            &copy; 2023 PbtServers ∙ Design by
+            <a href="https://twitter.com/DekerModMaker">MegaDeker</a> and
+            <a href="https://twitter.com/NicolasBla5quez">Nick</a>
+        </small>
+    </footer>
+
+</body>
+
+</html>
